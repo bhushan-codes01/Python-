@@ -78,5 +78,5 @@
 # print(marks)
 
 # pratice questionbs
-values = {9,9.0}
-print(values)
+# values = {9,9.0}
+# print(values)
