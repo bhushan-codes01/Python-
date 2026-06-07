@@ -114,9 +114,9 @@
 
 
 # for 
-n = 5
-fact = 1
+# n = 5
+# fact = 1
 
-for i in range(1,1+n):
-    fact *= i 
-print("fact is ",fact)    
+# for i in range(1,1+n):
+#     fact *= i 
+# print("fact is ",fact)    
