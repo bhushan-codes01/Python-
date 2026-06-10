@@ -90,18 +90,18 @@
 
 # 2nd practice queestion
 
-with open("practice.txt", "r") as f:
-    data = f.read 
-    print(data())
+# with open("practice.txt", "r") as f:
+#     data = f.read 
+#     print(data())
 
 
-    # num = ""
-    # for i   in range(len(data())):
-    #     if(data[i] == "," ):
-    #         print(int(num))
-    #         num =""
-    #     else:
-    #         num += data[i]
+#     # num = ""
+#     # for i   in range(len(data())):
+#     #     if(data[i] == "," ):
+#     #         print(int(num))
+#     #         num =""
+#     #     else:
+#     #         num += data[i]
 
-    nums = data.split(",")
-    print(nums)
+#     nums = data.split(",")
+#     print(nums)
