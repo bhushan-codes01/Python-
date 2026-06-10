@@ -128,11 +128,11 @@
 
 # recursiuve sums to 
 
-def print_list(list,idx = 0):
-    if(idx== len(list)):
-        return
-    print(list[idx])
-    print_list(list,idx+1)
+# def print_list(list,idx = 0):
+#     if(idx== len(list)):
+#         return
+#     print(list[idx])
+#     print_list(list,idx+1)
 
-fruits =["mango", "bananan" ,"apple", "lichie"]
-print_list(fruits)
+# fruits =["mango", "bananan" ,"apple", "lichie"]
+# print_list(fruits)
