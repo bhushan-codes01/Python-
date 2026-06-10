@@ -1,91 +1,132 @@
-# funcations and recursion
-# def sum (a,b): # a, b are the arugements 
-#  s = a + b
-#  return s
-
-# print(sum(2,3))
+# ==========================================
+# FUNCTIONS AND RECURSION
+# ==========================================
 
 
+# ------------------------------------------
+# Function: Sum of Two Numbers
+# ------------------------------------------
 
-# def cal_sum(a,b):
-#    return a+b
+# def sum(a, b):  # a and b are arguments
+#     s = a + b
+#     return s
 
-# sum = cal_sum(4,5)
+# print(sum(2, 3))
+
+
+# ------------------------------------------
+# Function: Calculate Sum
+# ------------------------------------------
+
+# def cal_sum(a, b):
+#     return a + b
+
+# sum = cal_sum(4, 5)
 # print(sum)
 
+
+# ------------------------------------------
+# Function: Print Hello
+# ------------------------------------------
+
 # def printhello():
-#    print("hello")
+#     print("hello")
 
 # printhello()
 
-# def cal_avg(a,b,c):
-#     sum = a + b + c 
-#     avg = sum/ 3
+
+# ------------------------------------------
+# Function: Calculate Average
+# ------------------------------------------
+
+# def cal_avg(a, b, c):
+#     sum = a + b + c
+#     avg = sum / 3
 #     print(avg)
 #     return avg
 
+# cal_avg(89, 34, 67)
 
-# (cal_avg(89,34,67)) 
 
+# ------------------------------------------
+# Function: Calculate Product
+# ------------------------------------------
 
-# def cal_prod(a=1 , b=1):
-#     print(a*b)
+# def cal_prod(a=1, b=1):
+#     print(a * b)
 #     return a * b
+
 # cal_prod()
-    
-# pratice problems 
-# cities = ["delhi", "mumbai" , "chennai"]
+
+
+# ==========================================
+# PRACTICE PROBLEMS
+# ==========================================
+
+
+# ------------------------------------------
+# Problem 1: Print Length of List
+# ------------------------------------------
+
+# cities = ["delhi", "mumbai", "chennai"]
 
 # def print_len(list):
 #     print(len(list))
 
-
-# print_len(cities)   
-
-# 2nd    this is second
+# print_len(cities)
 
 
-# heroes = ["thor","ironman","batman"]
+# ------------------------------------------
+# Problem 2: Print Elements of a List
+# ------------------------------------------
+
+# heroes = ["thor", "ironman", "batman"]
 
 # def print_len(list):
 #     print(len(list))
 
-# print(heroes[0],end="")    
-# print(heroes[1],end="")    
+# print(heroes[0], end="")
+# print(heroes[1], end="")
+
 # def print_list(list):
 #     for item in list:
-#         print(item, end = " ")
-
+#         print(item, end=" ")
 
 # print_list(heroes)
 
 
-# 3rd problem 
-
-
+# ------------------------------------------
+# Problem 3: Factorial of a Number
+# ------------------------------------------
 
 # n = 6
+
 # def cal_fact(n):
 #     fact = 1
-#     for i in range(1, n+1):
+
+#     for i in range(1, n + 1):
 #         fact *= i
-#     print(fact)     
 
-
+#     print(fact)
 
 # cal_fact(6)
 
 
-
-#4 th problem
-
+# ------------------------------------------
+# Problem 4: USD to INR Converter
+# ------------------------------------------
 
 # def con(usd_val):
 #     inr_val = usd_val * 83
-#     print(usd_val,"usd =", inr_val , "INR")
+#     print(usd_val, "usd =", inr_val, "INR")
+
 # con(89)
 
- # even and odd 
+
+# ------------------------------------------
+# Problem 5: Even or Odd
+# ------------------------------------------
+
 # def check_num(num):
 #     if num % 2 == 0:
 #         return "EVEN"
@@ -96,43 +137,67 @@
 # print(check_num(n))
 
 
-# recursion
+# ==========================================
+# RECURSION
+# ==========================================
+
+
+# ------------------------------------------
+# Recursive Function Example
+# ------------------------------------------
+
 # def show(n):
-#     if(n==0): # base case
+#     if n == 0:  # Base Case
 #         return
+
 #     print(n)
-#     show(n-1)
+#     show(n - 1)
 #     print("end")
 
+# show(5)
 
-# show(5)    
 
-#call stack 
+# ------------------------------------------
+# Recursive Factorial
+# ------------------------------------------
+
 # def fact(n):
-#     if(n == 0 or n == 1):
+#     if n == 0 or n == 1:
 #         return 1
 #     else:
-#         return n * fact(n-1)
-    
+#         return n * fact(n - 1)
 
-# problems 
+
+# ==========================================
+# RECURSION PRACTICE PROBLEMS
+# ==========================================
+
+
+# ------------------------------------------
+# Problem 1: Sum of First n Natural Numbers
+# ------------------------------------------
 
 # def calc_sum(n):
-#     if(n == 0):
+#     if n == 0:
 #         return 0
-   
-#     return  calc_sum(n-1) + n
 
-# sum  = calc_sum(5)
+#     return calc_sum(n - 1) + n
+
+# sum = calc_sum(5)
 # print(sum)
 
-# recursiuve sums to 
 
-# def print_list(list,idx = 0):
-#     if(idx== len(list)):
+# ------------------------------------------
+# Problem 2: Print List Using Recursion
+# ------------------------------------------
+
+# def print_list(list, idx=0):
+#     if idx == len(list):
 #         return
-#     print(list[idx])
-#     print_list(list,idx+1)
 
-# fruits =["mango", "bananan" ,"apple", "lichie"]
+#     print(list[idx])
+#     print_list(list, idx + 1)
+
+# fruits = ["mango", "banana", "apple", "lichie"]
+
 # print_list(fruits)
