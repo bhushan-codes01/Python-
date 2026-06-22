@@ -170,29 +170,69 @@
 
 # polymorphism 
 
-class Complex:
-    def __init__(self, real, img):
-        self.real = real
-        self.img = img
+# class Complex:
+#     def __init__(self, real, img):
+#         self.real = real
+#         self.img = img
 
-    def shownumber(self):
-        print(self.real, "i +", self.img, "j")
-    def __add__(self,num2): # addtion using dunder function 
-        newReal = self.real + num2.real
-        newImg = self.img + num2.img
-        return Complex( newReal , newImg)
-    def __sub__(self,num2): # sub using dunder function
-        newReal = self.real - num2.real
-        newImg = self.img - num2.img
-        return Complex( newReal , newImg)
+#     def shownumber(self):
+#         print(self.real, "i +", self.img, "j")
+#     def __add__(self,num2): # addtion using dunder function 
+#         newReal = self.real + num2.real
+#         newImg = self.img + num2.img
+#         return Complex( newReal , newImg)
+#     def __sub__(self,num2): # sub using dunder function
+#         newReal = self.real - num2.real
+#         newImg = self.img - num2.img
+#         return Complex( newReal , newImg)
 
-num1 = Complex(1, 3)
-num1.shownumber()
-
-
-num2 = Complex(2,4)
-num2.shownumber()
+# num1 = Complex(1, 3)
+# num1.shownumber()
 
 
-num3 =  num1 - num2
-num3.shownumber()
+# num2 = Complex(2,4)
+# num2.shownumber()
+
+
+# num3 =  num1 - num2
+# num3.shownumber()
+
+# practice question one
+
+# class Circle:
+#     def __init__(self, r):
+#         self.radius = r
+
+#     def area(self):
+#         area = 3.14 * self.radius * self.radius
+#         print("Area of circle =", area)
+
+#     def perimeter(self):
+#         perimeter = 2 * 3.14 * self.radius
+#         print("Perimeter of circle =", perimeter)
+
+
+# c1 = Circle(5)
+
+# c1.area()
+# c1.perimeter()
+
+
+#practice question 2
+
+
+# practice question 3
+
+class Order:
+    def __init__(self, item, price):
+        self.item = item
+        self.price = price
+
+    def __gt__(self, other):
+        return self.price > other.price
+
+
+order1 = Order("Laptop", 50000)
+order2 = Order("Mobile", 30000)
+
+print(order1 > order2)
